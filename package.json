@@ -1,0 +1,42 @@
+{
+  "name": "@csc/ui",
+  "version": "0.1.0",
+  "description": "CSC UI components and the csc-ui installer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbillyjames0221/csc-ui.git"
+  },
+  "homepage": "https://github.com/rbillyjames0221/csc-ui#readme",
+  "type": "module",
+  "bin": {
+    "csc-ui": "./bin/csc-ui.mjs"
+  },
+  "files": [
+    "dist",
+    "styles.css",
+    "bin"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./styles.css"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@tanstack/react-table": "^8.21.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "react-hook-form": "^7.65.0",
+    "zod": "^4.1.12"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

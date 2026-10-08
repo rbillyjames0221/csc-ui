@@ -1,6 +1,6 @@
 'use client';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { cn } from './cn';
+import { cn } from './cn.js';
 const steps = ['Details', 'Requirements', 'Review', 'Submit'];
 export function Stepper({ variant = 'horizontal', current = '2' }) {
     const index = Number(current) - 1;

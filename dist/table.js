@@ -2,10 +2,10 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { getCoreRowModel, getFilteredRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table';
 import React from 'react';
-import { Badge } from './badge';
-import { Button } from './button';
-import { cn } from './cn';
-import { sampleRows } from './sample';
+import { Badge } from './badge.js';
+import { Button } from './button.js';
+import { cn } from './cn.js';
+import { sampleRows } from './sample.js';
 const tone = (status) => (status === 'Approved' ? 'green' : status === 'Pending' ? 'amber' : 'blue');
 export function DataTable({ variant = 'standard' }) {
     const [sorting, setSorting] = React.useState([]);

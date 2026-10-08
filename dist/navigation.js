@@ -2,7 +2,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Menu, X } from 'lucide-react';
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 const links = ['Services', 'Examinations', 'Careers', 'Help'];
 export function TopNav({ variant = 'classic' }) {
     const [open, setOpen] = React.useState(false);

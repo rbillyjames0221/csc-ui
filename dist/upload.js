@@ -2,7 +2,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { FileText } from 'lucide-react';
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 export function Uploader({ variant = 'standard' }) {
     const [name, setName] = React.useState('');
     const [over, setOver] = React.useState(false);

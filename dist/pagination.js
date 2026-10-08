@@ -1,7 +1,7 @@
 'use client';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import React from 'react';
-import { Button } from './button';
+import { Button } from './button.js';
 export function Pagination({ variant = 'numbered', pages = 4 }) {
     const [page, setPage] = React.useState(1);
     const go = (next) => setPage(Math.min(pages, Math.max(1, next)));

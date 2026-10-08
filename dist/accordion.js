@@ -1,7 +1,7 @@
 'use client';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import { cn } from './cn';
+import { cn } from './cn.js';
 const items = [
     ['What is the CSC Design System?', 'A shared collection of UI components for consistent government applications.'],
     ['Is the sample data real?', 'No. Figures and names in previews are demonstration data only.'],

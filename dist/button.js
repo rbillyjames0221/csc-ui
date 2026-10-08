@@ -3,7 +3,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { cva } from 'class-variance-authority';
 import { ArrowRight, Check, ChevronDown, Loader2 } from 'lucide-react';
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 export const buttonVariants = cva('csc-button', {
     variants: {
         variant: {

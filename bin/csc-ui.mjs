@@ -52,7 +52,8 @@ function installStyles(appRoot) {
 }
 
 function npmInstall(appRoot) {
-  const result = spawnSync('npm', ['install'], { cwd: appRoot, stdio: 'inherit', shell: true });
+  const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+  const result = spawnSync(npm, ['install'], { cwd: appRoot, stdio: 'inherit' });
   if ((result.status ?? 1) !== 0) {
     console.error(`npm install failed. package.json already depends on @csc/ui from ${UI_PACKAGE}.`);
     process.exit(result.status ?? 1);

@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { cn } from './cn';
+import { cn } from './cn.js';
 export function Card({ children, className, variant = 'default' }) {
     return _jsx("div", { className: cn('csc-card', `card-${variant}`, className), children: children });
 }

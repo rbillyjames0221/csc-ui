@@ -2,9 +2,9 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import * as Dialog from '@radix-ui/react-dialog';
 import { Check, X } from 'lucide-react';
-import { Alert } from './alert';
-import { Button } from './button';
-import { Input } from './input';
+import { Alert } from './alert.js';
+import { Button } from './button.js';
+import { Input } from './input.js';
 const titles = {
     standard: 'Review application',
     minimal: 'Confirm action',

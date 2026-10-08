@@ -1,7 +1,7 @@
 'use client';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 const tabs = ['Overview', 'Details', 'Activity'];
 export function Tabs({ variant = 'underline' }) {
     const [current, setCurrent] = React.useState(tabs[0]);

@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { sampleSeries } from './sample';
+import { sampleSeries } from './sample.js';
 export function BarChart() {
     const max = Math.max(...sampleSeries.map((item) => item.value));
     return (_jsxs("figure", { className: "chart", children: [_jsx("figcaption", { children: "Sample applications by month" }), _jsx("svg", { viewBox: "0 0 360 160", role: "img", "aria-label": "Bar chart of sample monthly counts", children: sampleSeries.map((item, index) => {

@@ -4,10 +4,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { Alert } from './alert';
-import { Button } from './button';
-import { Input } from './input';
-import { Stepper } from './stepper';
+import { Alert } from './alert.js';
+import { Button } from './button.js';
+import { Input } from './input.js';
+import { Stepper } from './stepper.js';
 const schema = z.object({
     name: z.string().min(2, 'Enter at least 2 characters.'),
     email: z.string().email('Enter a valid email address.'),

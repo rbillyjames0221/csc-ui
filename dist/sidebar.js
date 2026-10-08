@@ -2,7 +2,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { BarChart3, ChevronDown, FileText, Home, Settings, Users } from 'lucide-react';
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 const items = [
     { label: 'Overview', icon: Home },
     { label: 'Applications', icon: FileText, children: ['New', 'In review'] },

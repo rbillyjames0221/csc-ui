@@ -1,7 +1,7 @@
 'use client';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import * as Menu from '@radix-ui/react-dropdown-menu';
-import { Button } from './button';
+import { Button } from './button.js';
 const sets = {
     actions: [['Edit', 'Duplicate', 'Archive']],
     profile: [['Profile', 'Settings', 'Sign out']],

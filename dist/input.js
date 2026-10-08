@@ -2,7 +2,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Mail, Search } from 'lucide-react';
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 export function Input({ label, hint, error, success, required, optional, leading, trailing, appearance = 'outlined', fieldSize = 'md', className, ...props }) {
     const described = error || success || hint;
     const id = props.id || React.useId();

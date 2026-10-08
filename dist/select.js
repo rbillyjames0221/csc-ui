@@ -1,7 +1,7 @@
 'use client';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import React from 'react';
-import { cn } from './cn';
+import { cn } from './cn.js';
 const offices = ['Central Office', 'National Capital Region', 'Regional Office III', 'Regional Office VII', 'BARMM'];
 export function SelectField({ label = 'Office', variant = 'standard', hint, }) {
     const [query, setQuery] = React.useState('');

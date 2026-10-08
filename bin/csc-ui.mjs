@@ -8,6 +8,10 @@ const INIT_COMMAND = 'npx github:rbillyjames0221/csc-ui init';
 
 const [command, name] = process.argv.slice(2);
 
+function readText(file) {
+  return readFileSync(file, 'utf8').replace(/^\uFEFF/, '');
+}
+
 function findPackageJson(start) {
   let dir = path.resolve(start);
   while (true) {
@@ -20,7 +24,7 @@ function findPackageJson(start) {
 }
 
 function installPackage(pkgPath) {
-  const pkg = JSON.parse(readFileSync(pkgPath, 'utf8'));
+  const pkg = JSON.parse(readText(pkgPath));
   if (pkg.name === '@csc/ui' || pkg.name === 'csc-design-system') {
     console.error('Run csc-ui inside the app that will use the components, not inside this repository.');
     process.exit(1);
@@ -42,7 +46,7 @@ function installStyles(appRoot) {
     console.log(`Add this line to the app's global CSS:\n${line.trim()}`);
     return;
   }
-  const css = readFileSync(file, 'utf8');
+  const css = readText(file);
   if (!css.includes("@import '@csc/ui/styles.css'")) writeFileSync(file, line + css);
   console.log(`Stylesheet import added to ${path.relative(appRoot, file)}`);
 }
